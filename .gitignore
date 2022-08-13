@@ -1,1 +1,13 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+#### Xcode Per User Files
+*.pbxuser
+*.perspectivev3
+xcuserdata/
+*.xcworkspace/xcshareddata/*.xccheckout
+*.xcworkspace/xcshareddata/*.xcscmblueprint
+*.xcodeproj/*.xcworkspace/xcshareddata/*.xccheckout
+*.xcodeproj/*.xcworkspace/xcshareddata/*.xcscmblueprint
 Pods/*
