@@ -1,0 +1,1054 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		381965FC2888338C00943076 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 381965FE2888338C00943076 /* Localizable.strings */; };
+		381966032888342E00943076 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381966022888342E00943076 /* Extensions.swift */; };
+		3823A54327AEA02700CA7002 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823A54227AEA02700CA7002 /* WelcomeScreen.swift */; };
+		382C4E8428A62B6C0069852C /* FridgifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A69D927AE82A300CA5B6E /* FridgifyTests.swift */; };
+		382C4E8628A62E960069852C /* RecipesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C4E8528A62E960069852C /* RecipesTest.swift */; };
+		3836561527AED16F0052DC26 /* welcome3.json in Resources */ = {isa = PBXBuildFile; fileRef = 3836561427AED16F0052DC26 /* welcome3.json */; };
+		3836561727AED6160052DC26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836561627AED6160052DC26 /* LoginViewController.swift */; };
+		3836561927AEE48B0052DC26 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 3836561827AEE48A0052DC26 /* login.json */; };
+		38391FEC27AEC6BF0012E8E2 /* welcome2.json in Resources */ = {isa = PBXBuildFile; fileRef = 38391FEB27AEC6BF0012E8E2 /* welcome2.json */; };
+		38391FEE27AEC9A70012E8E2 /* Welcome2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38391FED27AEC9A70012E8E2 /* Welcome2.swift */; };
+		38391FF027AEC9B00012E8E2 /* Welcome3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38391FEF27AEC9B00012E8E2 /* Welcome3.swift */; };
+		383CD68027C5883600FECB23 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383CD67F27C5883600FECB23 /* Post.swift */; };
+		384A69C327AE82A100CA5B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A69C227AE82A100CA5B6E /* AppDelegate.swift */; };
+		384A69C527AE82A100CA5B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A69C427AE82A100CA5B6E /* SceneDelegate.swift */; };
+		384A69C727AE82A100CA5B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A69C627AE82A100CA5B6E /* ViewController.swift */; };
+		384A69CA27AE82A100CA5B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384A69C827AE82A100CA5B6E /* Main.storyboard */; };
+		384A69CC27AE82A300CA5B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384A69CB27AE82A300CA5B6E /* Assets.xcassets */; };
+		384A69CF27AE82A300CA5B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384A69CD27AE82A300CA5B6E /* LaunchScreen.storyboard */; };
+		384A69E427AE82A300CA5B6E /* FridgifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A69E327AE82A300CA5B6E /* FridgifyUITests.swift */; };
+		384A69E627AE82A300CA5B6E /* FridgifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A69E527AE82A300CA5B6E /* FridgifyUITestsLaunchTests.swift */; };
+		384A69F527AE8A7700CA5B6E /* welcomeFood.json in Resources */ = {isa = PBXBuildFile; fileRef = 384A69F427AE8A7700CA5B6E /* welcomeFood.json */; };
+		385383A927BD9C0400C98555 /* Croogla4F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385383A827BD9C0400C98555 /* Croogla4F.ttf */; };
+		3858B7BB289736D80093EC44 /* RecipeTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3858B7BA289736D80093EC44 /* RecipeTitleModel.swift */; };
+		3863F18727AF1F5800424928 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863F18627AF1F5800424928 /* SingUpViewController.swift */; };
+		3863F18927AF1F6400424928 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863F18827AF1F6400424928 /* SignInViewController.swift */; };
+		3863F18B27AFBE8C00424928 /* fridge1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3863F18A27AFBE8C00424928 /* fridge1.json */; };
+		3863F18D27AFC2BC00424928 /* food1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3863F18C27AFC2BC00424928 /* food1.json */; };
+		3863F18F27AFC4D800424928 /* welcome.json in Resources */ = {isa = PBXBuildFile; fileRef = 3863F18E27AFC4D800424928 /* welcome.json */; };
+		386655F827B031FC00EB6BFF /* avocado.json in Resources */ = {isa = PBXBuildFile; fileRef = 386655F727B031FC00EB6BFF /* avocado.json */; };
+		386E3D3428A66F6400A459EA /* CircleRecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E3D3228A66F6400A459EA /* CircleRecipeCollectionViewCell.swift */; };
+		386E3D3528A66F6400A459EA /* CircleRecipeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386E3D3328A66F6400A459EA /* CircleRecipeCollectionViewCell.xib */; };
+		386E3D3728A77BC400A459EA /* RecipeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E3D3628A77BC400A459EA /* RecipeCategoryModel.swift */; };
+		386E3D6428A7919000A459EA /* CategoryCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E3D6228A7919000A459EA /* CategoryCollectionTableViewCell.swift */; };
+		386E3D6528A7919100A459EA /* CategoryCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386E3D6328A7919000A459EA /* CategoryCollectionTableViewCell.xib */; };
+		3870219C2897014A00920A60 /* RecipeTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870219B2897014A00920A60 /* RecipeTitles.swift */; };
+		3870219E289705DE00920A60 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870219D289705DE00920A60 /* RecipeViewController.swift */; };
+		387021A0289710D000920A60 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870219F289710D000920A60 /* RecipeManager.swift */; };
+		3873FCCA288AA163009D3FAB /* welcome-black.json in Resources */ = {isa = PBXBuildFile; fileRef = 3873FCC9288AA163009D3FAB /* welcome-black.json */; };
+		3884283527C7DEAA00B1338E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884283427C7DEAA00B1338E /* Constants.swift */; };
+		388AD07A2891296000BAADA5 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388AD0792891296000BAADA5 /* RecipeData.swift */; };
+		389359762897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389359752897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift */; };
+		389359782897CF1C008E3DC8 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389359772897CF1C008E3DC8 /* PhotoCollectionViewCell.swift */; };
+		3893C3D527C6478400D14D6D /* UserPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C3D427C6478400D14D6D /* UserPostCollectionViewCell.swift */; };
+		38955ACD27B9180000E52B9E /* jumpingPan.json in Resources */ = {isa = PBXBuildFile; fileRef = 38955ACC27B9180000E52B9E /* jumpingPan.json */; };
+		38955ACF27B9592A00E52B9E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38955ACE27B9592A00E52B9E /* ProfileVC.swift */; };
+		38955AD227B95B4E00E52B9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38955AD127B95B4E00E52B9E /* HomeVC.swift */; };
+		38955AD627B95F3000E52B9E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38955AD427B95F3000E52B9E /* PostTableViewCell.swift */; };
+		38955AD727B95F3000E52B9E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38955AD527B95F3000E52B9E /* PostTableViewCell.xib */; };
+		38D8D24E27B2B4B800F37D91 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8D24D27B2B4B800F37D91 /* MainViewController.swift */; };
+		38D8D25027B2B7AD00F37D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38D8D24F27B2B7AC00F37D91 /* GoogleService-Info.plist */; };
+		38DA0C5127BCF6DE00ABD510 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA0C5027BCF6DE00ABD510 /* PostVC.swift */; };
+		38DA0C5327BCF6EA00ABD510 /* CommunityChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA0C5227BCF6EA00ABD510 /* CommunityChatVC.swift */; };
+		38DA0C5527BCF6F700ABD510 /* MyFridgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA0C5427BCF6F700ABD510 /* MyFridgeVC.swift */; };
+		38E1C278282DA44D00D0973A /* fridgiLogin.json in Resources */ = {isa = PBXBuildFile; fileRef = 38E1C277282DA44D00D0973A /* fridgiLogin.json */; };
+		38EBBD3627AEABCC00034C2B /* welcome1.json in Resources */ = {isa = PBXBuildFile; fileRef = 38EBBD3527AEABCC00034C2B /* welcome1.json */; };
+		875E3B738ADE060377456348 /* Pods_Fridgify_FridgifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE877B6644D0D22070149F8 /* Pods_Fridgify_FridgifyUITests.framework */; };
+		B9CC4E11AF7705BAC9B89252 /* Pods_FridgifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B965EBC485C2ED3135B255BE /* Pods_FridgifyTests.framework */; };
+		F92D0ED295E890F5F1ADE6BB /* Pods_Fridgify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB75212CE914A4F414107BD /* Pods_Fridgify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		384A69D627AE82A300CA5B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 384A69B727AE82A100CA5B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384A69BE27AE82A100CA5B6E;
+			remoteInfo = Fridgify;
+		};
+		384A69E027AE82A300CA5B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 384A69B727AE82A100CA5B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384A69BE27AE82A100CA5B6E;
+			remoteInfo = Fridgify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EE877B6644D0D22070149F8 /* Pods_Fridgify_FridgifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fridgify_FridgifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF55FB9568DA96CB5D60EB6 /* Pods-FridgifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgifyTests.debug.xcconfig"; path = "Target Support Files/Pods-FridgifyTests/Pods-FridgifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29D306BED36D60B0862D06A1 /* Pods-Fridgify-FridgifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fridgify-FridgifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fridgify-FridgifyUITests/Pods-Fridgify-FridgifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37377D02250B4236DC29DC49 /* Pods-Fridgify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fridgify.debug.xcconfig"; path = "Target Support Files/Pods-Fridgify/Pods-Fridgify.debug.xcconfig"; sourceTree = "<group>"; };
+		381965F22888325F00943076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		381965F32888325F00943076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		381965F4288832AC00943076 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		381965F5288832AC00943076 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Main.strings; sourceTree = "<group>"; };
+		381965F6288832B700943076 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		381965F7288832B700943076 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		381965F92888332000943076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		381965FD2888338C00943076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		381965FF2888339700943076 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Localizable.strings; sourceTree = "<group>"; };
+		381966002888339800943076 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		381966012888339900943076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		381966022888342E00943076 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3823A54227AEA02700CA7002 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		382C4E8528A62E960069852C /* RecipesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTest.swift; sourceTree = "<group>"; };
+		3836561427AED16F0052DC26 /* welcome3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcome3.json; sourceTree = "<group>"; };
+		3836561627AED6160052DC26 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3836561827AEE48A0052DC26 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		38391FEB27AEC6BF0012E8E2 /* welcome2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcome2.json; sourceTree = "<group>"; };
+		38391FED27AEC9A70012E8E2 /* Welcome2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome2.swift; sourceTree = "<group>"; };
+		38391FEF27AEC9B00012E8E2 /* Welcome3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome3.swift; sourceTree = "<group>"; };
+		383CD67F27C5883600FECB23 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		384A69BF27AE82A100CA5B6E /* fridgiGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fridgiGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		384A69C227AE82A100CA5B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		384A69C427AE82A100CA5B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		384A69C627AE82A100CA5B6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		384A69C927AE82A100CA5B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		384A69CB27AE82A300CA5B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		384A69CE27AE82A300CA5B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		384A69D027AE82A300CA5B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384A69D527AE82A300CA5B6E /* FridgifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384A69D927AE82A300CA5B6E /* FridgifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgifyTests.swift; sourceTree = "<group>"; };
+		384A69DF27AE82A300CA5B6E /* FridgifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384A69E327AE82A300CA5B6E /* FridgifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgifyUITests.swift; sourceTree = "<group>"; };
+		384A69E527AE82A300CA5B6E /* FridgifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		384A69F427AE8A7700CA5B6E /* welcomeFood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcomeFood.json; sourceTree = "<group>"; };
+		385383A827BD9C0400C98555 /* Croogla4F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Croogla4F.ttf; sourceTree = "<group>"; };
+		3858B7BA289736D80093EC44 /* RecipeTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTitleModel.swift; sourceTree = "<group>"; };
+		3863F18627AF1F5800424928 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		3863F18827AF1F6400424928 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3863F18A27AFBE8C00424928 /* fridge1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fridge1.json; sourceTree = "<group>"; };
+		3863F18C27AFC2BC00424928 /* food1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = food1.json; sourceTree = "<group>"; };
+		3863F18E27AFC4D800424928 /* welcome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcome.json; sourceTree = "<group>"; };
+		386655F727B031FC00EB6BFF /* avocado.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = avocado.json; sourceTree = "<group>"; };
+		386E3D3228A66F6400A459EA /* CircleRecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleRecipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		386E3D3328A66F6400A459EA /* CircleRecipeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleRecipeCollectionViewCell.xib; sourceTree = "<group>"; };
+		386E3D3628A77BC400A459EA /* RecipeCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryModel.swift; sourceTree = "<group>"; };
+		386E3D6228A7919000A459EA /* CategoryCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		386E3D6328A7919000A459EA /* CategoryCollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		3870219B2897014A00920A60 /* RecipeTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTitles.swift; sourceTree = "<group>"; };
+		3870219D289705DE00920A60 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		3870219F289710D000920A60 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		3873FCC9288AA163009D3FAB /* welcome-black.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "welcome-black.json"; sourceTree = "<group>"; };
+		3884283427C7DEAA00B1338E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		388AD0792891296000BAADA5 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		389359752897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePhotoCarouselTableViewCell.swift; sourceTree = "<group>"; };
+		389359772897CF1C008E3DC8 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3893C3D427C6478400D14D6D /* UserPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		38955ACC27B9180000E52B9E /* jumpingPan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jumpingPan.json; sourceTree = "<group>"; };
+		38955ACE27B9592A00E52B9E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		38955AD127B95B4E00E52B9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		38955AD427B95F3000E52B9E /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		38955AD527B95F3000E52B9E /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		38D8D24D27B2B4B800F37D91 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		38D8D24F27B2B7AC00F37D91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		38DA0C5027BCF6DE00ABD510 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		38DA0C5227BCF6EA00ABD510 /* CommunityChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityChatVC.swift; sourceTree = "<group>"; };
+		38DA0C5427BCF6F700ABD510 /* MyFridgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeVC.swift; sourceTree = "<group>"; };
+		38E1C277282DA44D00D0973A /* fridgiLogin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fridgiLogin.json; sourceTree = "<group>"; };
+		38EBBD3527AEABCC00034C2B /* welcome1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcome1.json; sourceTree = "<group>"; };
+		711583AC5817063B725E5BD7 /* Pods-Fridgify-FridgifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fridgify-FridgifyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fridgify-FridgifyUITests/Pods-Fridgify-FridgifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B965EBC485C2ED3135B255BE /* Pods_FridgifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FridgifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFECD4F0C825670E56DD183 /* Pods-FridgifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgifyTests.release.xcconfig"; path = "Target Support Files/Pods-FridgifyTests/Pods-FridgifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBB75212CE914A4F414107BD /* Pods_Fridgify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fridgify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0BB1FAF74A127166B72658 /* Pods-Fridgify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fridgify.release.xcconfig"; path = "Target Support Files/Pods-Fridgify/Pods-Fridgify.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384A69BC27AE82A100CA5B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92D0ED295E890F5F1ADE6BB /* Pods_Fridgify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384A69D227AE82A300CA5B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CC4E11AF7705BAC9B89252 /* Pods_FridgifyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384A69DC27AE82A300CA5B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875E3B738ADE060377456348 /* Pods_Fridgify_FridgifyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		383CD67E27C5880F00FECB23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3870219F289710D000920A60 /* RecipeManager.swift */,
+				383CD67F27C5883600FECB23 /* Post.swift */,
+				388AD0792891296000BAADA5 /* RecipeData.swift */,
+				3870219B2897014A00920A60 /* RecipeTitles.swift */,
+				3858B7BA289736D80093EC44 /* RecipeTitleModel.swift */,
+				386E3D3628A77BC400A459EA /* RecipeCategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		384A69B627AE82A100CA5B6E = {
+			isa = PBXGroup;
+			children = (
+				381965FE2888338C00943076 /* Localizable.strings */,
+				384A69C127AE82A100CA5B6E /* Fridgify */,
+				384A69D827AE82A300CA5B6E /* FridgifyTests */,
+				384A69E227AE82A300CA5B6E /* FridgifyUITests */,
+				384A69C027AE82A100CA5B6E /* Products */,
+				7F4C9ECA46C3B4C82AEE5902 /* Pods */,
+				B973FCAD30A2A64286266779 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		384A69C027AE82A100CA5B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				384A69BF27AE82A100CA5B6E /* fridgiGO.app */,
+				384A69D527AE82A300CA5B6E /* FridgifyTests.xctest */,
+				384A69DF27AE82A300CA5B6E /* FridgifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		384A69C127AE82A100CA5B6E /* Fridgify */ = {
+			isa = PBXGroup;
+			children = (
+				383CD67E27C5880F00FECB23 /* Model */,
+				385383A727BD9BED00C98555 /* Fonts */,
+				38F41D2027BC466600FD6E35 /* Ressources */,
+				38955AD327B95EFF00E52B9E /* View */,
+				38955AD027B95AEA00E52B9E /* ViewController */,
+				384A69F327AE8A5B00CA5B6E /* LottieJSON */,
+				384A69D027AE82A300CA5B6E /* Info.plist */,
+				38D8D24F27B2B7AC00F37D91 /* GoogleService-Info.plist */,
+			);
+			path = Fridgify;
+			sourceTree = "<group>";
+		};
+		384A69D827AE82A300CA5B6E /* FridgifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				384A69D927AE82A300CA5B6E /* FridgifyTests.swift */,
+				382C4E8528A62E960069852C /* RecipesTest.swift */,
+			);
+			path = FridgifyTests;
+			sourceTree = "<group>";
+		};
+		384A69E227AE82A300CA5B6E /* FridgifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				384A69E327AE82A300CA5B6E /* FridgifyUITests.swift */,
+				384A69E527AE82A300CA5B6E /* FridgifyUITestsLaunchTests.swift */,
+			);
+			path = FridgifyUITests;
+			sourceTree = "<group>";
+		};
+		384A69F327AE8A5B00CA5B6E /* LottieJSON */ = {
+			isa = PBXGroup;
+			children = (
+				38E1C277282DA44D00D0973A /* fridgiLogin.json */,
+				384A69F427AE8A7700CA5B6E /* welcomeFood.json */,
+				38EBBD3527AEABCC00034C2B /* welcome1.json */,
+				38391FEB27AEC6BF0012E8E2 /* welcome2.json */,
+				3836561427AED16F0052DC26 /* welcome3.json */,
+				3836561827AEE48A0052DC26 /* login.json */,
+				3873FCC9288AA163009D3FAB /* welcome-black.json */,
+				3863F18A27AFBE8C00424928 /* fridge1.json */,
+				3863F18C27AFC2BC00424928 /* food1.json */,
+				3863F18E27AFC4D800424928 /* welcome.json */,
+				386655F727B031FC00EB6BFF /* avocado.json */,
+				38955ACC27B9180000E52B9E /* jumpingPan.json */,
+			);
+			path = LottieJSON;
+			sourceTree = "<group>";
+		};
+		385383A727BD9BED00C98555 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				385383A827BD9C0400C98555 /* Croogla4F.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		389359742897C82E008E3DC8 /* RecipeCells */ = {
+			isa = PBXGroup;
+			children = (
+				389359752897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift */,
+				389359772897CF1C008E3DC8 /* PhotoCollectionViewCell.swift */,
+				386E3D3228A66F6400A459EA /* CircleRecipeCollectionViewCell.swift */,
+				386E3D3328A66F6400A459EA /* CircleRecipeCollectionViewCell.xib */,
+				386E3D6228A7919000A459EA /* CategoryCollectionTableViewCell.swift */,
+				386E3D6328A7919000A459EA /* CategoryCollectionTableViewCell.xib */,
+			);
+			path = RecipeCells;
+			sourceTree = "<group>";
+		};
+		38955AD027B95AEA00E52B9E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				384A69C627AE82A100CA5B6E /* ViewController.swift */,
+				38BA8FBD27BCFF6000B723AB /* Onboarding */,
+				38D8D24D27B2B4B800F37D91 /* MainViewController.swift */,
+				38DA0C4F27BCF6B600ABD510 /* Core Tabs */,
+				3870219D289705DE00920A60 /* RecipeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		38955AD327B95EFF00E52B9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				389359742897C82E008E3DC8 /* RecipeCells */,
+				384A69CB27AE82A300CA5B6E /* Assets.xcassets */,
+				384A69CD27AE82A300CA5B6E /* LaunchScreen.storyboard */,
+				384A69C827AE82A100CA5B6E /* Main.storyboard */,
+				38955AD427B95F3000E52B9E /* PostTableViewCell.swift */,
+				38955AD527B95F3000E52B9E /* PostTableViewCell.xib */,
+				3893C3D427C6478400D14D6D /* UserPostCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38BA8FBD27BCFF6000B723AB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3823A54227AEA02700CA7002 /* WelcomeScreen.swift */,
+				38391FED27AEC9A70012E8E2 /* Welcome2.swift */,
+				38391FEF27AEC9B00012E8E2 /* Welcome3.swift */,
+				3836561627AED6160052DC26 /* LoginViewController.swift */,
+				3863F18827AF1F6400424928 /* SignInViewController.swift */,
+				3863F18627AF1F5800424928 /* SingUpViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		38DA0C4F27BCF6B600ABD510 /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				38955AD127B95B4E00E52B9E /* HomeVC.swift */,
+				38DA0C5027BCF6DE00ABD510 /* PostVC.swift */,
+				38DA0C5227BCF6EA00ABD510 /* CommunityChatVC.swift */,
+				38DA0C5427BCF6F700ABD510 /* MyFridgeVC.swift */,
+				38955ACE27B9592A00E52B9E /* ProfileVC.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		38F41D2027BC466600FD6E35 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				384A69C227AE82A100CA5B6E /* AppDelegate.swift */,
+				384A69C427AE82A100CA5B6E /* SceneDelegate.swift */,
+				3884283427C7DEAA00B1338E /* Constants.swift */,
+				381966022888342E00943076 /* Extensions.swift */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		7F4C9ECA46C3B4C82AEE5902 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37377D02250B4236DC29DC49 /* Pods-Fridgify.debug.xcconfig */,
+				EF0BB1FAF74A127166B72658 /* Pods-Fridgify.release.xcconfig */,
+				29D306BED36D60B0862D06A1 /* Pods-Fridgify-FridgifyUITests.debug.xcconfig */,
+				711583AC5817063B725E5BD7 /* Pods-Fridgify-FridgifyUITests.release.xcconfig */,
+				1EF55FB9568DA96CB5D60EB6 /* Pods-FridgifyTests.debug.xcconfig */,
+				BCFECD4F0C825670E56DD183 /* Pods-FridgifyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B973FCAD30A2A64286266779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB75212CE914A4F414107BD /* Pods_Fridgify.framework */,
+				1EE877B6644D0D22070149F8 /* Pods_Fridgify_FridgifyUITests.framework */,
+				B965EBC485C2ED3135B255BE /* Pods_FridgifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		384A69BE27AE82A100CA5B6E /* Fridgify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384A69E927AE82A300CA5B6E /* Build configuration list for PBXNativeTarget "Fridgify" */;
+			buildPhases = (
+				965780732689EE5430B5C55D /* [CP] Check Pods Manifest.lock */,
+				384A69BB27AE82A100CA5B6E /* Sources */,
+				384A69BC27AE82A100CA5B6E /* Frameworks */,
+				384A69BD27AE82A100CA5B6E /* Resources */,
+				C038FB005852C9821BA39905 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fridgify;
+			productName = Fridgify;
+			productReference = 384A69BF27AE82A100CA5B6E /* fridgiGO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		384A69D427AE82A300CA5B6E /* FridgifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384A69EC27AE82A300CA5B6E /* Build configuration list for PBXNativeTarget "FridgifyTests" */;
+			buildPhases = (
+				9A19C1107F6E3CE31E26617A /* [CP] Check Pods Manifest.lock */,
+				384A69D127AE82A300CA5B6E /* Sources */,
+				384A69D227AE82A300CA5B6E /* Frameworks */,
+				384A69D327AE82A300CA5B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384A69D727AE82A300CA5B6E /* PBXTargetDependency */,
+			);
+			name = FridgifyTests;
+			productName = FridgifyTests;
+			productReference = 384A69D527AE82A300CA5B6E /* FridgifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		384A69DE27AE82A300CA5B6E /* FridgifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384A69EF27AE82A300CA5B6E /* Build configuration list for PBXNativeTarget "FridgifyUITests" */;
+			buildPhases = (
+				A6A1ACF4178EE0886555FDB6 /* [CP] Check Pods Manifest.lock */,
+				384A69DB27AE82A300CA5B6E /* Sources */,
+				384A69DC27AE82A300CA5B6E /* Frameworks */,
+				384A69DD27AE82A300CA5B6E /* Resources */,
+				114CE4F9FB13E6BF4F370C69 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384A69E127AE82A300CA5B6E /* PBXTargetDependency */,
+			);
+			name = FridgifyUITests;
+			productName = FridgifyUITests;
+			productReference = 384A69DF27AE82A300CA5B6E /* FridgifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		384A69B727AE82A100CA5B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					384A69BE27AE82A100CA5B6E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					384A69D427AE82A300CA5B6E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 384A69BE27AE82A100CA5B6E;
+					};
+					384A69DE27AE82A300CA5B6E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 384A69BE27AE82A100CA5B6E;
+					};
+				};
+			};
+			buildConfigurationList = 384A69BA27AE82A100CA5B6E /* Build configuration list for PBXProject "Fridgify" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				az,
+				de,
+			);
+			mainGroup = 384A69B627AE82A100CA5B6E;
+			productRefGroup = 384A69C027AE82A100CA5B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				384A69BE27AE82A100CA5B6E /* Fridgify */,
+				384A69D427AE82A300CA5B6E /* FridgifyTests */,
+				384A69DE27AE82A300CA5B6E /* FridgifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		384A69BD27AE82A100CA5B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3873FCCA288AA163009D3FAB /* welcome-black.json in Resources */,
+				38D8D25027B2B7AD00F37D91 /* GoogleService-Info.plist in Resources */,
+				384A69F527AE8A7700CA5B6E /* welcomeFood.json in Resources */,
+				384A69CF27AE82A300CA5B6E /* LaunchScreen.storyboard in Resources */,
+				386E3D3528A66F6400A459EA /* CircleRecipeCollectionViewCell.xib in Resources */,
+				384A69CC27AE82A300CA5B6E /* Assets.xcassets in Resources */,
+				3836561927AEE48B0052DC26 /* login.json in Resources */,
+				384A69CA27AE82A100CA5B6E /* Main.storyboard in Resources */,
+				38955AD727B95F3000E52B9E /* PostTableViewCell.xib in Resources */,
+				386655F827B031FC00EB6BFF /* avocado.json in Resources */,
+				3863F18B27AFBE8C00424928 /* fridge1.json in Resources */,
+				3836561527AED16F0052DC26 /* welcome3.json in Resources */,
+				38E1C278282DA44D00D0973A /* fridgiLogin.json in Resources */,
+				385383A927BD9C0400C98555 /* Croogla4F.ttf in Resources */,
+				386E3D6528A7919100A459EA /* CategoryCollectionTableViewCell.xib in Resources */,
+				38EBBD3627AEABCC00034C2B /* welcome1.json in Resources */,
+				381965FC2888338C00943076 /* Localizable.strings in Resources */,
+				38391FEC27AEC6BF0012E8E2 /* welcome2.json in Resources */,
+				3863F18F27AFC4D800424928 /* welcome.json in Resources */,
+				38955ACD27B9180000E52B9E /* jumpingPan.json in Resources */,
+				3863F18D27AFC2BC00424928 /* food1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384A69D327AE82A300CA5B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384A69DD27AE82A300CA5B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		114CE4F9FB13E6BF4F370C69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fridgify-FridgifyUITests/Pods-Fridgify-FridgifyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fridgify-FridgifyUITests/Pods-Fridgify-FridgifyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fridgify-FridgifyUITests/Pods-Fridgify-FridgifyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		965780732689EE5430B5C55D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fridgify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A19C1107F6E3CE31E26617A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FridgifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A1ACF4178EE0886555FDB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fridgify-FridgifyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C038FB005852C9821BA39905 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fridgify/Pods-Fridgify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fridgify/Pods-Fridgify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fridgify/Pods-Fridgify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		384A69BB27AE82A100CA5B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DA0C5527BCF6F700ABD510 /* MyFridgeVC.swift in Sources */,
+				38955ACF27B9592A00E52B9E /* ProfileVC.swift in Sources */,
+				384A69C727AE82A100CA5B6E /* ViewController.swift in Sources */,
+				38955AD627B95F3000E52B9E /* PostTableViewCell.swift in Sources */,
+				38DA0C5327BCF6EA00ABD510 /* CommunityChatVC.swift in Sources */,
+				38D8D24E27B2B4B800F37D91 /* MainViewController.swift in Sources */,
+				389359762897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift in Sources */,
+				3870219C2897014A00920A60 /* RecipeTitles.swift in Sources */,
+				3893C3D527C6478400D14D6D /* UserPostCollectionViewCell.swift in Sources */,
+				386E3D6428A7919000A459EA /* CategoryCollectionTableViewCell.swift in Sources */,
+				38DA0C5127BCF6DE00ABD510 /* PostVC.swift in Sources */,
+				387021A0289710D000920A60 /* RecipeManager.swift in Sources */,
+				3863F18727AF1F5800424928 /* SingUpViewController.swift in Sources */,
+				386E3D3728A77BC400A459EA /* RecipeCategoryModel.swift in Sources */,
+				3858B7BB289736D80093EC44 /* RecipeTitleModel.swift in Sources */,
+				388AD07A2891296000BAADA5 /* RecipeData.swift in Sources */,
+				389359782897CF1C008E3DC8 /* PhotoCollectionViewCell.swift in Sources */,
+				38391FEE27AEC9A70012E8E2 /* Welcome2.swift in Sources */,
+				384A69C327AE82A100CA5B6E /* AppDelegate.swift in Sources */,
+				3823A54327AEA02700CA7002 /* WelcomeScreen.swift in Sources */,
+				3836561727AED6160052DC26 /* LoginViewController.swift in Sources */,
+				384A69C527AE82A100CA5B6E /* SceneDelegate.swift in Sources */,
+				38955AD227B95B4E00E52B9E /* HomeVC.swift in Sources */,
+				381966032888342E00943076 /* Extensions.swift in Sources */,
+				3870219E289705DE00920A60 /* RecipeViewController.swift in Sources */,
+				3884283527C7DEAA00B1338E /* Constants.swift in Sources */,
+				386E3D3428A66F6400A459EA /* CircleRecipeCollectionViewCell.swift in Sources */,
+				38391FF027AEC9B00012E8E2 /* Welcome3.swift in Sources */,
+				383CD68027C5883600FECB23 /* Post.swift in Sources */,
+				3863F18927AF1F6400424928 /* SignInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384A69D127AE82A300CA5B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382C4E8428A62B6C0069852C /* FridgifyTests.swift in Sources */,
+				382C4E8628A62E960069852C /* RecipesTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384A69DB27AE82A300CA5B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384A69E627AE82A300CA5B6E /* FridgifyUITestsLaunchTests.swift in Sources */,
+				384A69E427AE82A300CA5B6E /* FridgifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		384A69D727AE82A300CA5B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384A69BE27AE82A100CA5B6E /* Fridgify */;
+			targetProxy = 384A69D627AE82A300CA5B6E /* PBXContainerItemProxy */;
+		};
+		384A69E127AE82A300CA5B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384A69BE27AE82A100CA5B6E /* Fridgify */;
+			targetProxy = 384A69E027AE82A300CA5B6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		381965FE2888338C00943076 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				381965FD2888338C00943076 /* en */,
+				381965FF2888339700943076 /* az */,
+				381966002888339800943076 /* de */,
+				381966012888339900943076 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		384A69C827AE82A100CA5B6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384A69C927AE82A100CA5B6E /* Base */,
+				381965F32888325F00943076 /* ru */,
+				381965F5288832AC00943076 /* az */,
+				381965F7288832B700943076 /* de */,
+				381965F92888332000943076 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		384A69CD27AE82A300CA5B6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384A69CE27AE82A300CA5B6E /* Base */,
+				381965F22888325F00943076 /* ru */,
+				381965F4288832AC00943076 /* az */,
+				381965F6288832B700943076 /* de */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		384A69E727AE82A300CA5B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		384A69E827AE82A300CA5B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		384A69EA27AE82A300CA5B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37377D02250B4236DC29DC49 /* Pods-Fridgify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJPFP5AMNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fridgify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradbay.fridgify;
+				PRODUCT_NAME = fridgiGO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		384A69EB27AE82A300CA5B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0BB1FAF74A127166B72658 /* Pods-Fridgify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJPFP5AMNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fridgify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradbay.fridgify;
+				PRODUCT_NAME = fridgiGO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		384A69ED27AE82A300CA5B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF55FB9568DA96CB5D60EB6 /* Pods-FridgifyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJPFP5AMNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradbayramli.FridgifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fridgify.app/Fridgify";
+			};
+			name = Debug;
+		};
+		384A69EE27AE82A300CA5B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFECD4F0C825670E56DD183 /* Pods-FridgifyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJPFP5AMNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradbayramli.FridgifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fridgify.app/Fridgify";
+			};
+			name = Release;
+		};
+		384A69F027AE82A300CA5B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D306BED36D60B0862D06A1 /* Pods-Fridgify-FridgifyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJPFP5AMNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradbayramli.FridgifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fridgify;
+			};
+			name = Debug;
+		};
+		384A69F127AE82A300CA5B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711583AC5817063B725E5BD7 /* Pods-Fridgify-FridgifyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DJPFP5AMNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradbayramli.FridgifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fridgify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		384A69BA27AE82A100CA5B6E /* Build configuration list for PBXProject "Fridgify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384A69E727AE82A300CA5B6E /* Debug */,
+				384A69E827AE82A300CA5B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384A69E927AE82A300CA5B6E /* Build configuration list for PBXNativeTarget "Fridgify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384A69EA27AE82A300CA5B6E /* Debug */,
+				384A69EB27AE82A300CA5B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384A69EC27AE82A300CA5B6E /* Build configuration list for PBXNativeTarget "FridgifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384A69ED27AE82A300CA5B6E /* Debug */,
+				384A69EE27AE82A300CA5B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384A69EF27AE82A300CA5B6E /* Build configuration list for PBXNativeTarget "FridgifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384A69F027AE82A300CA5B6E /* Debug */,
+				384A69F127AE82A300CA5B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 384A69B727AE82A100CA5B6E /* Project object */;
+}

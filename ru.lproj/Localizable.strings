@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Fridgify
+
+  Created by Murad Bayramli on 20.07.22.
+  
+*/
+
+
+"SIGN IN" = "ВХОД";
+"SIGN UP" = "РЕГИСТРАЦИЯ";
+"SIGNUP" = "РЕГИСТРАЦИЯ";
+"Get Started" = "Регистрация";
+"LOGIN" = "ВОЙТИ";
+"Email" = "Почта";
+"Password" = "Пароль";
+"Repeat Password" = "Повторить пароль";
+"Forgot Password?" = "Забыли пароль?";
+"Full Name" = "Полное имя";
+"Enter confirmation code" = "Ввести код подтверждения";

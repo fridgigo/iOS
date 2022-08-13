@@ -1,0 +1,57 @@
+
+/* Class = "UINavigationItem"; title = "LOGIN"; ObjectID = "5Lf-6h-4SA"; */
+"5Lf-6h-4SA.title" = "LOGIN";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "5tp-NY-05G"; */
+"5tp-NY-05G.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Add Post"; ObjectID = "9qf-4U-jfg"; */
+"9qf-4U-jfg.normalTitle" = "Add Post";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "EA6-un-UCp"; */
+"EA6-un-UCp.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Create a Post"; ObjectID = "FSs-8W-Vw1"; */
+"FSs-8W-Vw1.text" = "Create a Post";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "Fvr-bz-3np"; */
+"Fvr-bz-3np.normalTitle" = "SIGN IN";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "H1s-ys-Mx6"; */
+"H1s-ys-Mx6.placeholder" = "Full Name";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "Ha6-UQ-vp9"; */
+"Ha6-UQ-vp9.normalTitle" = "Get Started";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "K1N-jM-QlB"; */
+"K1N-jM-QlB.normalTitle" = "Forgot Password?";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "T2z-CX-8lg"; */
+"T2z-CX-8lg.normalTitle" = "LOGIN";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "Xvj-Cs-T7B"; */
+"Xvj-Cs-T7B.text" = "Username";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "ef8-NL-0T5"; */
+"ef8-NL-0T5.normalTitle" = "SIGN UP";
+
+/* Class = "UITextField"; placeholder = "Repeat Password"; ObjectID = "ewL-Fc-ctz"; */
+"ewL-Fc-ctz.placeholder" = "Repeat Password";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "may-OM-e7L"; */
+"may-OM-e7L.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Enter Confirmation Code"; ObjectID = "og0-x5-Lj7"; */
+"og0-x5-Lj7.normalTitle" = "Enter Confirmation Code";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "plI-0x-bB4"; */
+"plI-0x-bB4.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "vvi-5J-ZBe"; */
+"vvi-5J-ZBe.placeholder" = "Email";
+
+/* Class = "UINavigationItem"; title = "SIGNUP"; ObjectID = "xdl-Gq-C1w"; */
+"xdl-Gq-C1w.title" = "SIGNUP";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "y65-Bd-EOG"; */
+"y65-Bd-EOG.placeholder" = "Password";

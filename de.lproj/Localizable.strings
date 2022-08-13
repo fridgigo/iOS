@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Fridgify
+
+  Created by Murad Bayramli on 20.07.22.
+  
+*/
+
+
+"SIGN IN" = "EINLOGGEN";
+"SIGN UP" = "REGISTRIEREN";
+"SIGNUP" = "REGISTRIEREN";
+"Get Started" = "Loslegen";
+"LOGIN" = "EINLOGGEN";
+"Email" = "E-Mail";
+"Password" = "Passwort";
+"Repeat Password" = "Passwort Wiederholung";
+"Forgot Password?" = "Passwort vergessen?";
+"Full Name" = "Volle Name";
+"Enter confirmation code" = "Bestätigungscode eingeben";
