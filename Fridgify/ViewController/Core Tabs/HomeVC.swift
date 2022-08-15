@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 import SCLAlertView
 import SkeletonView
+import DGElasticPullToRefresh
+
 
 class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  SkeletonTableViewDataSource {
     
@@ -22,6 +24,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  Ske
     var categoryModels = [RecipeCategoryModel]()
     @IBOutlet weak var table: UITableView!
     let refreshControl = UIRefreshControl()
+    
 
     
     
@@ -43,12 +46,27 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  Ske
         
         refreshFeed()
 //        getFeed()
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+//        refreshControl.attributedTitle = NSAttributedString(string: "🍗")
         refreshControl.addTarget(self, action: #selector(refreshFeed), for: .valueChanged)
         
         table.rowHeight = 488
         table.estimatedRowHeight = 488
-        table.refreshControl = refreshControl
+//        table.refreshControl = refreshControl
+        
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor.white //UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
+        table.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false){ (timer) in
+                self?.table.beginUpdates()
+                self?.getFeed()
+                self?.table.endUpdates()
+                self?.table.reloadData()
+            }
+            self?.table.dg_stopLoading()
+        }, loadingView: loadingView)
+        table.dg_setPullToRefreshFillColor(UIColor(red: 130/255.0, green: 216/255.0, blue: 190/255.0, alpha: 1.0))
+        table.dg_setPullToRefreshBackgroundColor(UIColor(named: "MainBackground")!)//table.backgroundColor!)
+        
         table.register(CategoryCollectionTableViewCell.nib(), forCellReuseIdentifier: CategoryCollectionTableViewCell.identifier)
         table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
         table.delegate = self
@@ -56,14 +74,18 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  Ske
         table.separatorStyle = .none
         
         
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "MainBackground")
 
-        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now()+5, execute: {
             
             self.table.stopSkeletonAnimation()
             self.view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.85))
         })
         
+    }
+    
+    deinit {
+        table.dg_removePullToRefresh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -279,6 +301,10 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  Ske
     }
     
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        if indexPath.row == 0 {
+            return CategoryCollectionTableViewCell.identifier
+        }
+        
         return PostTableViewCell.identifier
     }
     
@@ -305,7 +331,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  Ske
             
         } else {
             let cell = self.table.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as! PostTableViewCell
-            cell.configure(with: posts[indexPath.row])
+            cell.configure(with: posts[indexPath.row-1])
             let backgroundView = UIView()
             backgroundView.backgroundColor = UIColor.lightGray
             cell.selectedBackgroundView = backgroundView
@@ -334,22 +360,6 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  Ske
     }
     
 }
-
-//extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return imageModels.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = recipesTopCollectionView.dequeueReusableCell(withReuseIdentifier: CircleRecipeCollectionViewCell.identifier, for: indexPath) as! CircleRecipeCollectionViewCell
-//        //cell.configure(with: imageModels[indexPath.row])
-//
-//        return cell
-//    }
-//
-//
-//}
 
 
 struct ReceiptPost {

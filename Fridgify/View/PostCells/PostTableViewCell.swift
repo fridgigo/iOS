@@ -49,7 +49,7 @@ class PostTableViewCell: UITableViewCell {
         likesButton.isSkeletonable = false
         commentsButton.isSkeletonable = false
         shareButton.isSkeletonable = false
-        savePostButton.isSkeletonable = false
+        savePostButton.isSkeletonable = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -72,10 +72,11 @@ class PostTableViewCell: UITableViewCell {
         self.cardView.layer.shadowRadius = 8
         self.cardView.layer.shadowOffset = .zero
         self.cardView.layer.shadowOpacity = 0.4
+        self.cardView.backgroundColor = UIColor(named: "MainBackground")
         //self.likesLabel.text = "\(model.likes) Likes"
         self.usernameLabel.text = "username"   // model.username
         
-        self.userImageView.image = UIImage(named: "murad")
+        self.userImageView.image = UIImage(named: "murad1")
         self.postImageView.image = UIImage(named: "dolma")
         self.postDescription.text = "My new Recipy"  //model.postDescription
         //self.postDescription.text = model._id
@@ -92,7 +93,10 @@ class PostTableViewCell: UITableViewCell {
 //            self.likesButton.setImage(unlikedImage, for: .normal)
 //            self.likesButton.tintColor = .black
 //        }
-        
+        self.likesButton.tintColor = .label
+        self.shareButton.tintColor = .label
+        self.commentsButton.tintColor = .label
+        self.savePostButton.tintColor = .label
         
         
         

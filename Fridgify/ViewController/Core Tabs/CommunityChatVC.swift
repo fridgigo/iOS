@@ -12,7 +12,7 @@ import UIKit
 class CommunityChatVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "MainBackground")
     }
     
     override func viewWillAppear(_ animated: Bool) {

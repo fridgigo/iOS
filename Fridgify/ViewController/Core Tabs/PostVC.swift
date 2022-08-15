@@ -21,7 +21,7 @@ class PostVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray4
+        view.backgroundColor = UIColor(named: "MainBackground")
         
         addPostButton.layer.cornerRadius = 20
         

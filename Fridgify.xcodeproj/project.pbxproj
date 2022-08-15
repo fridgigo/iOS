@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3803FF6A28A8DFFC00FED397 /* ProfileHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3803FF6828A8DFFC00FED397 /* ProfileHeaderReusableView.swift */; };
+		3803FF6B28A8DFFC00FED397 /* ProfileHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803FF6928A8DFFC00FED397 /* ProfileHeaderReusableView.xib */; };
 		381965FC2888338C00943076 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 381965FE2888338C00943076 /* Localizable.strings */; };
 		381966032888342E00943076 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381966022888342E00943076 /* Extensions.swift */; };
 		3823A54327AEA02700CA7002 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823A54227AEA02700CA7002 /* WelcomeScreen.swift */; };
@@ -45,6 +47,7 @@
 		3870219E289705DE00920A60 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870219D289705DE00920A60 /* RecipeViewController.swift */; };
 		387021A0289710D000920A60 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870219F289710D000920A60 /* RecipeManager.swift */; };
 		3873FCCA288AA163009D3FAB /* welcome-black.json in Resources */ = {isa = PBXBuildFile; fileRef = 3873FCC9288AA163009D3FAB /* welcome-black.json */; };
+		387F5BBD28AA1C9B00998944 /* ZoomTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F5BBC28AA1C9B00998944 /* ZoomTransitionDelegate.swift */; };
 		3884283527C7DEAA00B1338E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884283427C7DEAA00B1338E /* Constants.swift */; };
 		388AD07A2891296000BAADA5 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388AD0792891296000BAADA5 /* RecipeData.swift */; };
 		389359762897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389359752897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift */; };
@@ -89,6 +92,8 @@
 		1EF55FB9568DA96CB5D60EB6 /* Pods-FridgifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgifyTests.debug.xcconfig"; path = "Target Support Files/Pods-FridgifyTests/Pods-FridgifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29D306BED36D60B0862D06A1 /* Pods-Fridgify-FridgifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fridgify-FridgifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fridgify-FridgifyUITests/Pods-Fridgify-FridgifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		37377D02250B4236DC29DC49 /* Pods-Fridgify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fridgify.debug.xcconfig"; path = "Target Support Files/Pods-Fridgify/Pods-Fridgify.debug.xcconfig"; sourceTree = "<group>"; };
+		3803FF6828A8DFFC00FED397 /* ProfileHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderReusableView.swift; sourceTree = "<group>"; };
+		3803FF6928A8DFFC00FED397 /* ProfileHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderReusableView.xib; sourceTree = "<group>"; };
 		381965F22888325F00943076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		381965F32888325F00943076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		381965F4288832AC00943076 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 		3870219D289705DE00920A60 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		3870219F289710D000920A60 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 		3873FCC9288AA163009D3FAB /* welcome-black.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "welcome-black.json"; sourceTree = "<group>"; };
+		387F5BBC28AA1C9B00998944 /* ZoomTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionDelegate.swift; sourceTree = "<group>"; };
 		3884283427C7DEAA00B1338E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		388AD0792891296000BAADA5 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		389359752897C874008E3DC8 /* RecipePhotoCarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePhotoCarouselTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,6 +199,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3803FF6728A8DFBF00FED397 /* ProfileHeaderSection */ = {
+			isa = PBXGroup;
+			children = (
+				3803FF6828A8DFFC00FED397 /* ProfileHeaderReusableView.swift */,
+				3803FF6928A8DFFC00FED397 /* ProfileHeaderReusableView.xib */,
+			);
+			path = ProfileHeaderSection;
+			sourceTree = "<group>";
+		};
 		383CD67E27C5880F00FECB23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +304,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		387F5BBB28A8F64000998944 /* PostCells */ = {
+			isa = PBXGroup;
+			children = (
+				38955AD427B95F3000E52B9E /* PostTableViewCell.swift */,
+				38955AD527B95F3000E52B9E /* PostTableViewCell.xib */,
+			);
+			path = PostCells;
+			sourceTree = "<group>";
+		};
 		389359742897C82E008E3DC8 /* RecipeCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,12 +341,12 @@
 		38955AD327B95EFF00E52B9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3803FF6728A8DFBF00FED397 /* ProfileHeaderSection */,
 				389359742897C82E008E3DC8 /* RecipeCells */,
 				384A69CB27AE82A300CA5B6E /* Assets.xcassets */,
 				384A69CD27AE82A300CA5B6E /* LaunchScreen.storyboard */,
 				384A69C827AE82A100CA5B6E /* Main.storyboard */,
-				38955AD427B95F3000E52B9E /* PostTableViewCell.swift */,
-				38955AD527B95F3000E52B9E /* PostTableViewCell.xib */,
+				387F5BBB28A8F64000998944 /* PostCells */,
 				3893C3D427C6478400D14D6D /* UserPostCollectionViewCell.swift */,
 			);
 			path = View;
@@ -360,6 +384,7 @@
 				384A69C427AE82A100CA5B6E /* SceneDelegate.swift */,
 				3884283427C7DEAA00B1338E /* Constants.swift */,
 				381966022888342E00943076 /* Extensions.swift */,
+				387F5BBC28AA1C9B00998944 /* ZoomTransitionDelegate.swift */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -513,6 +538,7 @@
 				3836561527AED16F0052DC26 /* welcome3.json in Resources */,
 				38E1C278282DA44D00D0973A /* fridgiLogin.json in Resources */,
 				385383A927BD9C0400C98555 /* Croogla4F.ttf in Resources */,
+				3803FF6B28A8DFFC00FED397 /* ProfileHeaderReusableView.xib in Resources */,
 				386E3D6528A7919100A459EA /* CategoryCollectionTableViewCell.xib in Resources */,
 				38EBBD3627AEABCC00034C2B /* welcome1.json in Resources */,
 				381965FC2888338C00943076 /* Localizable.strings in Resources */,
@@ -649,6 +675,7 @@
 			files = (
 				38DA0C5527BCF6F700ABD510 /* MyFridgeVC.swift in Sources */,
 				38955ACF27B9592A00E52B9E /* ProfileVC.swift in Sources */,
+				387F5BBD28AA1C9B00998944 /* ZoomTransitionDelegate.swift in Sources */,
 				384A69C727AE82A100CA5B6E /* ViewController.swift in Sources */,
 				38955AD627B95F3000E52B9E /* PostTableViewCell.swift in Sources */,
 				38DA0C5327BCF6EA00ABD510 /* CommunityChatVC.swift in Sources */,
@@ -667,6 +694,7 @@
 				38391FEE27AEC9A70012E8E2 /* Welcome2.swift in Sources */,
 				384A69C327AE82A100CA5B6E /* AppDelegate.swift in Sources */,
 				3823A54327AEA02700CA7002 /* WelcomeScreen.swift in Sources */,
+				3803FF6A28A8DFFC00FED397 /* ProfileHeaderReusableView.swift in Sources */,
 				3836561727AED6160052DC26 /* LoginViewController.swift in Sources */,
 				384A69C527AE82A100CA5B6E /* SceneDelegate.swift in Sources */,
 				38955AD227B95B4E00E52B9E /* HomeVC.swift in Sources */,

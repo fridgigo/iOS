@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class CategoryCollectionTableViewCell: UITableViewCell {
     
@@ -19,8 +20,10 @@ class CategoryCollectionTableViewCell: UITableViewCell {
     }
     
     func configure(with models: [RecipeCategoryModel]) {
+        self.isSkeletonable = true
         self.models = models
         categoryCollectionView.reloadData()
+        
     }
 
     override func awakeFromNib() {
@@ -44,6 +47,7 @@ class CategoryCollectionTableViewCell: UITableViewCell {
 //MARK: - CollectionView
 extension CategoryCollectionTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
     }
@@ -59,6 +63,6 @@ extension CategoryCollectionTableViewCell: UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 80, height: 120)
+        return CGSize(width: 80, height: 110)
     }
 }

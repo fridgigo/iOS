@@ -23,6 +23,7 @@ target 'Fridgify' do
   pod 'ViewAnimator'
   pod 'SwifterSwift'
   pod 'TextFieldEffects'
+  pod 'DGElasticPullToRefresh'
   
   
 

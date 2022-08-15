@@ -21,6 +21,7 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     @IBOutlet weak var postsCollectionView: UICollectionView!
     
     var posts = [Post]()
+    var extraView: UIView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,19 +31,54 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         postsCollectionView.register(UserPostCollectionViewCell.self,
                                      forCellWithReuseIdentifier: UserPostCollectionViewCell.identifier)
+        postsCollectionView.register(ProfileHeaderReusableView.nib(), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ProfileHeaderReusableView.identifier)
         postsCollectionView.delegate = self
         postsCollectionView.dataSource = self
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "MainBackground")
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.navigationBar.isTranslucent = true
         
-        userImage.layer.cornerRadius = 40
-        userImage.layer.borderWidth = 4
-        userImage.layer.borderColor = UIColor.white.cgColor
+//        userImage.layer.cornerRadius = 40
+//        userImage.layer.borderWidth = 4
+//        userImage.layer.borderColor = UIColor.white.cgColor
         
-        usernameLabel.text = UserDefaults.standard.string(forKey: "username")
+//        usernameLabel.text = UserDefaults.standard.string(forKey: "username")
         
         
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+    }
+    
+    func animateZoomforCell(zoomCell: UICollectionViewCell) {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {() -> Void in
+            let x = zoomCell.frame.size.width / 2
+            let y = zoomCell.frame.size.height / 1.5
+            zoomCell.transform = CGAffineTransform(scaleX: x, y: y)
+        }, completion: {(finished: Bool) -> Void in
+            
+            self.animateZoomforCellremove(zoomCell: zoomCell)
+        })
+    }
+    func animateZoomforCellremove(zoomCell: UICollectionViewCell) {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {() -> Void in
+            zoomCell.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }, completion: {(finished: Bool) -> Void in
+            
+            self.extraView.removeFromSuperview()
+            self.postsCollectionView.reloadData()
+            
+        })
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "traitCollectionDidChange"), object: self)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,16 +102,16 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.size.width/3)-3,
-                      height: (view.frame.size.height/3)-3)
+                      height: (view.frame.size.width/3)-3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 3
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -84,6 +120,21 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.postsCollectionView.deselectItem(at: indexPath, animated: true)
+        self.animateZoomforCell(zoomCell: collectionView.cellForItem(at: indexPath)!)
+        extraView.backgroundColor = .white
+        extraView.addSubview(collectionView.cellForItem(at: indexPath)!)
+        self.view.addSubview(extraView)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ProfileHeaderReusableView.identifier, for: indexPath) as! ProfileHeaderReusableView
+        header.configure()
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.size.width, height: 220)
     }
     
     

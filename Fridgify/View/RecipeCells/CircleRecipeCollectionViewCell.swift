@@ -28,7 +28,7 @@ class CircleRecipeCollectionViewCell: UICollectionViewCell {
         recipeCategoryImage.clipsToBounds = true
         recipeCategoryImage.contentMode = .scaleAspectFill
         recipeCategoryImage.layer.masksToBounds = true
-        recipeCategoryImage.layer.cornerRadius = recipeCategoryImage.frame.height/3
+        recipeCategoryImage.layer.cornerRadius = recipeCategoryImage.frame.height/2
         recipeCategoryImage.backgroundColor = .black
         recipeCategoryLabel.text = model.labelText
     }
