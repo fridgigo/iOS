@@ -108,9 +108,9 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
             self.navigationController?.navigationBar.isHidden = false
             navigationItem.hidesBackButton = true
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(logoutUser))
-            let profileBarButton = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(showProfile))
+//            let profileBarButton = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(showProfile))
             
-            navigationItem.rightBarButtonItem = profileBarButton
+//            navigationItem.rightBarButtonItem = profileBarButton
             break;
         default:
             print("default block executed")

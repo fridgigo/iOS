@@ -793,11 +793,43 @@
                     <navigationItem key="navigationItem" id="RXz-jr-Hci"/>
                     <connections>
                         <outlet property="postsCollectionView" destination="yAS-9L-DBY" id="YsM-Rl-WhH"/>
+                        <segue destination="RJD-J2-JmA" kind="show" identifier="toEditProfile" id="O9r-xE-qPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aO2-0f-b3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3524.6376811594205" y="847.76785714285711"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="Ok1-Pc-fUa">
+            <objects>
+                <viewController storyboardIdentifier="editProfileVC" id="RJD-J2-JmA" customClass="EditProfileViewController" customModule="fridgiGO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zDJ-1X-xS5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="brS-3W-s6T">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vdl-EF-ZDX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="brS-3W-s6T" firstAttribute="trailing" secondItem="vdl-EF-ZDX" secondAttribute="trailing" id="LhZ-FO-5JW"/>
+                            <constraint firstAttribute="bottom" secondItem="brS-3W-s6T" secondAttribute="bottom" id="hxW-KN-PD7"/>
+                            <constraint firstItem="brS-3W-s6T" firstAttribute="top" secondItem="vdl-EF-ZDX" secondAttribute="top" id="jAh-on-cXM"/>
+                            <constraint firstItem="brS-3W-s6T" firstAttribute="leading" secondItem="vdl-EF-ZDX" secondAttribute="leading" id="qgl-TL-51e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3em-2L-uYG"/>
+                    <connections>
+                        <outlet property="editProfileTableView" destination="brS-3W-s6T" id="Fdu-Ga-7w0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEa-1n-EQk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4486.9565217391309" y="847.76785714285711"/>
         </scene>
         <!--LOGIN-->
         <scene sceneID="MdY-73-Qc2">
@@ -1180,7 +1212,7 @@
         <image name="wave-login" width="540" height="960"/>
         <image name="yellowBackground" width="500" height="500"/>
         <namedColor name="MainBackground">
-            <color red="0.85699999332427979" green="0.85699999332427979" blue="0.85699999332427979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.91900002956390381" green="0.91900002956390381" blue="0.91900002956390381" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="fridgiBase">
             <color red="0.39300000667572021" green="0.71700000762939453" blue="0.63200002908706665" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

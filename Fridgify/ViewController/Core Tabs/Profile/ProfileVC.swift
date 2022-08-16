@@ -44,13 +44,23 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
 //        usernameLabel.text = UserDefaults.standard.string(forKey: "username")
         
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(editProfileButtonPressed), name: NSNotification.Name(rawValue: "editProfileButtonPressed"), object: nil)
         
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc func editProfileButtonPressed() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let editProfileVC = storyboard.instantiateViewController(withIdentifier: K.editProfileVC)
+        self.navigationController?.pushViewController(editProfileVC, animated: true)
     }
     
     func animateZoomforCell(zoomCell: UICollectionViewCell) {
@@ -134,7 +144,7 @@ class ProfileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.size.width, height: 220)
+        return CGSize(width: view.frame.size.width, height: 350)
     }
     
     

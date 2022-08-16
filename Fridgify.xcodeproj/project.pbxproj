@@ -58,6 +58,7 @@
 		38955AD227B95B4E00E52B9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38955AD127B95B4E00E52B9E /* HomeVC.swift */; };
 		38955AD627B95F3000E52B9E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38955AD427B95F3000E52B9E /* PostTableViewCell.swift */; };
 		38955AD727B95F3000E52B9E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38955AD527B95F3000E52B9E /* PostTableViewCell.xib */; };
+		38D191D628AA7C3A008C9ECE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D191D528AA7C3A008C9ECE /* EditProfileViewController.swift */; };
 		38D8D24E27B2B4B800F37D91 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8D24D27B2B4B800F37D91 /* MainViewController.swift */; };
 		38D8D25027B2B7AD00F37D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38D8D24F27B2B7AC00F37D91 /* GoogleService-Info.plist */; };
 		38DA0C5127BCF6DE00ABD510 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA0C5027BCF6DE00ABD510 /* PostVC.swift */; };
@@ -157,6 +158,7 @@
 		38955AD127B95B4E00E52B9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		38955AD427B95F3000E52B9E /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		38955AD527B95F3000E52B9E /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		38D191D528AA7C3A008C9ECE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		38D8D24D27B2B4B800F37D91 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		38D8D24F27B2B7AC00F37D91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38DA0C5027BCF6DE00ABD510 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
@@ -341,13 +343,12 @@
 		38955AD327B95EFF00E52B9E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3803FF6728A8DFBF00FED397 /* ProfileHeaderSection */,
+				38D191D928AAE21D008C9ECE /* Profile */,
 				389359742897C82E008E3DC8 /* RecipeCells */,
+				387F5BBB28A8F64000998944 /* PostCells */,
 				384A69CB27AE82A300CA5B6E /* Assets.xcassets */,
 				384A69CD27AE82A300CA5B6E /* LaunchScreen.storyboard */,
 				384A69C827AE82A100CA5B6E /* Main.storyboard */,
-				387F5BBB28A8F64000998944 /* PostCells */,
-				3893C3D427C6478400D14D6D /* UserPostCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +366,32 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		38D191D828AADFF7008C9ECE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				38955ACE27B9592A00E52B9E /* ProfileVC.swift */,
+				38D191D528AA7C3A008C9ECE /* EditProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		38D191D928AAE21D008C9ECE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				38D191DA28AAE237008C9ECE /* EditProfile */,
+				3803FF6728A8DFBF00FED397 /* ProfileHeaderSection */,
+				3893C3D427C6478400D14D6D /* UserPostCollectionViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		38D191DA28AAE237008C9ECE /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
 		38DA0C4F27BCF6B600ABD510 /* Core Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,7 +399,7 @@
 				38DA0C5027BCF6DE00ABD510 /* PostVC.swift */,
 				38DA0C5227BCF6EA00ABD510 /* CommunityChatVC.swift */,
 				38DA0C5427BCF6F700ABD510 /* MyFridgeVC.swift */,
-				38955ACE27B9592A00E52B9E /* ProfileVC.swift */,
+				38D191D828AADFF7008C9ECE /* Profile */,
 			);
 			path = "Core Tabs";
 			sourceTree = "<group>";
@@ -684,6 +711,7 @@
 				3870219C2897014A00920A60 /* RecipeTitles.swift in Sources */,
 				3893C3D527C6478400D14D6D /* UserPostCollectionViewCell.swift in Sources */,
 				386E3D6428A7919000A459EA /* CategoryCollectionTableViewCell.swift in Sources */,
+				38D191D628AA7C3A008C9ECE /* EditProfileViewController.swift in Sources */,
 				38DA0C5127BCF6DE00ABD510 /* PostVC.swift in Sources */,
 				387021A0289710D000920A60 /* RecipeManager.swift in Sources */,
 				3863F18727AF1F5800424928 /* SingUpViewController.swift in Sources */,

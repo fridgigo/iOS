@@ -39,4 +39,5 @@ struct K {
     static let snacks = "Snacks"
     static let soups = "Soups"
     static let supper = "Supper"
+    static let editProfileVC = "editProfileVC"
 }
